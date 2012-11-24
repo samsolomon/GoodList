@@ -7,7 +7,7 @@ Every morning he asked:
 Every evening he asked:
 * "What good have I done today?"
 
-I've been following his morining routine for several months now. I write what I think I should accomplish at the top of a page in the morning, and write what I acctually accomplished on the bottom in the evening.
+I've been following his morining routine for several months now. I write what I think I should accomplish at the top of a page in the morning, and write what I acctually accomplished on the bottom in the evening. It's an interesting spin on traditional to-do lists, and gives you the opportunity to refect on daily accomplishments.
 
 
 == Ideas for Future Releases
