@@ -1,6 +1,6 @@
 == GoodList
 
-Rails seems like it was designed to build to-do lists. So I've decided to try and create one inspired by Benjamin Franklin. 
+Rails seems like it was designed to build to-do lists. So I've decided to and create one inspired by Benjamin Franklin. 
 
 Every morning he asked:
 * "What good shall I do today?"
