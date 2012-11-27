@@ -1,0 +1,29 @@
+<%= form_for(@morninglist) do |f| %>
+  <% if @morninglist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@morninglist.errors.count, "error") %> prohibited this morninglist from being saved:</h2>
+
+      <ul>
+      <% @morninglist.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :note %><br />
+    <%= f.text_area :note %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.check_box :status %>
+  </div>
+  <div class="field">
+    <%= f.label :day_id %><br />
+    <%= f.number_field :day_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

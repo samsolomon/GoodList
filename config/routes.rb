@@ -1,6 +1,10 @@
 Todolist::Application.routes.draw do
-  resources :items
+  resources :days
 
-  root :to => 'items#index'
+  resources :eveninglists
+
+  resources :morninglists
+
+  root :to => 'days#index'
 
 end

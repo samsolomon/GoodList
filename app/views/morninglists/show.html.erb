@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Note:</b>
+  <%= @morninglist.note %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @morninglist.status %>
+</p>
+
+<p>
+  <b>Day:</b>
+  <%= @morninglist.day_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_morninglist_path(@morninglist) %> |
+<%= link_to 'Back', morninglists_path %>

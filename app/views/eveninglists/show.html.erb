@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Note:</b>
+  <%= @eveninglist.note %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @eveninglist.status %>
+</p>
+
+<p>
+  <b>Day:</b>
+  <%= @eveninglist.day_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_eveninglist_path(@eveninglist) %> |
+<%= link_to 'Back', eveninglists_path %>

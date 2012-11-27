@@ -11,11 +11,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121124034733) do
+ActiveRecord::Schema.define(:version => 20121127184446) do
+
+  create_table "days", :force => true do |t|
+    t.integer  "day_num"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "eveninglists", :force => true do |t|
+    t.text     "note"
+    t.boolean  "status"
+    t.integer  "day_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "items", :force => true do |t|
     t.string   "note"
     t.boolean  "status"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "morninglists", :force => true do |t|
+    t.text     "note"
+    t.boolean  "status"
+    t.integer  "day_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

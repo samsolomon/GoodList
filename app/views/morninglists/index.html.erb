@@ -1,0 +1,27 @@
+<h1>Listing morninglists</h1>
+
+<table>
+  <tr>
+    <th>Note</th>
+    <th>Status</th>
+    <th>Day</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @morninglists.each do |morninglist| %>
+  <tr>
+    <td><%= morninglist.note %></td>
+    <td><%= morninglist.status %></td>
+    <td><%= morninglist.day_id %></td>
+    <td><%= link_to 'Show', morninglist %></td>
+    <td><%= link_to 'Edit', edit_morninglist_path(morninglist) %></td>
+    <td><%= link_to 'Destroy', morninglist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Morninglist', new_morninglist_path %>
